@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предпросмотр</title>
+</head>
+<body>
+    
+    <form id="Forma">
+        <label for="name">Как вас зовут?</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="age">Сколько вам лет?</label><br>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="gender">Пол:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select><br>
+
+        <label for="interests">Что вам интересно?</label><br>
+        <input type="checkbox" id="interests1" name="interests" value="drink">
+        <label for="interests1">Пить</label><br>
+        <input type="checkbox" id="interests2" name="interests" value="smoke">
+        <label for="interests2">Курить</label><br>
+        <input type="checkbox" id="interests3" name="interests" value="sleep">
+        <label for="interests3">Спать</label><br>
+
+        <label for="experience">Ваш опыт в сдаче сессий?</label><br>
+        <input type="radio" id="experience1" name="experience" value="beginner">
+        <label for="experience1">Начинающий</label><br>
+        <input type="radio" id="experience2" name="experience" value="intermediate">
+        <label for="experience2">Средний</label><br>
+        <input type="radio" id="experience3" name="experience" value="advanced">
+        <label for="experience3">Продвинутый</label><br>
+
+        <label for="birthday">Дата начала зимней сессии:</label><br>
+        <input type="date" id="birthday" name="birthday"><br>
+
+        <label for="quantity">Количество ваших долгов:</label><br>
+        <input type="number" id="quantity" name="quantity" min="0" max="10" step="1"><br>
+
+        <label for="price">Уровень стресса:</label><br>
+        <input type="range" id="price" name="price" min="0" max="100"><br>
+
+        <label for="color">Цвет вашей обуви:</label><br>
+        <input type="color" id="color" name="color"><br>
+
+        <label for="time">Во сколько вы проснулись?</label><br>
+        <input type="time" id="time" name="time"><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+    <div id="results"></div>
+    <script src="main.js" defer></script>
+
+</body>
+</html>
