@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предпросмотр</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form id="Forma">
+        <label for="name">Как вас зовут?</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="age">Сколько вам лет?</label><br>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="gender">Пол:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select><br>
+
+        <label for="password">Придумай пароль:</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="interests">Голодный?</label><br>
+        <input type="checkbox" id="hunger" name="golod" value="hungry">
+        <label for="hunger">Да</label><br>
+        
+        <label for="interests">Что вам интересно?</label><br>
+        <input type="radio" id="interests1" name="interest" value="drink">
+        <label for="interest1">Пить</label><br>
+        <input type="radio" id="interest2" name="interest" value="smoke">
+        <label for="interest2">Курить</label><br>
+        <input type="radio" id="interest3" name="interest" value="sleep">
+        <label for="interest3">Спать</label><br>
+
+        <label for="birthday">Дата начала зимней сессии:</label><br>
+        <input type="date" id="birthday" name="birthday"><br>
+
+        <label for="quantity">Количество ваших долгов:</label><br>
+        <input type="number" id="quantity" name="quantity" min="0" max="10" step="1"><br>
+
+        <label for="price">Уровень стресса:</label><br>
+        <input type="range" id="price" name="price" min="0" max="100"><br>
+
+        <label for="color">Цвет вашей обуви:</label><br>
+        <input type="color" id="color" name="color"><br>
+
+        <label for="time">Во сколько вы проснулись?</label><br>
+        <input type="time" id="time" name="time"><br>
+
+        <input type="submit" id="submit" value="Отправить">
+    </form>
+    <div id="results"></div>
+    <script src="main.js" defer></script>
+
+</body>
+</html>
